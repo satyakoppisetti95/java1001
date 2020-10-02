@@ -51,13 +51,13 @@ public class Dice{
         this.sideUp = sideUp;
     }
 
-    public static int roll(){
+    public int roll(){
         this.sideUp = rand.nextInt(this.numSides)+1;
         return this.sideUp;
     }
 
     // to string function
     public String toString(){
-        return "Type : "+this.diceType+", numSides : "+this.numSides+", sideUp : "+this.sideUp;
+        return "Dice Type : "+this.diceType+", numSides : "+this.numSides+", sideUp : "+this.sideUp;
     }
 }
